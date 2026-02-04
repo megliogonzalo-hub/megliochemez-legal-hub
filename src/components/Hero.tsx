@@ -24,7 +24,7 @@ const Hero = () => {
 
           {/* Subtítulo */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4">
-            Atención 24 hs. Actuación en Entre Ríos, Santa Fe y justicia federal.
+            Atención 24 hs. Actuación en Entre Ríos, Santa Fe y Justicia Federal.
           </p>
 
           {/* Ubicación */}
