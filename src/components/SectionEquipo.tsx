@@ -70,7 +70,7 @@ const SectionEquipo = () => {
         {/* Texto adicional */}
         <div className="mt-12 max-w-2xl">
           <p className="text-muted-foreground leading-relaxed">
-            Actuamos en toda la provincia de Entre Ríos, Santa Fe y ante la justicia federal, 
+            Actuamos en toda la provincia de Entre Ríos, Santa Fe y ante la Justicia Federal, 
             con disponibilidad las 24 horas para situaciones urgentes.
           </p>
         </div>
