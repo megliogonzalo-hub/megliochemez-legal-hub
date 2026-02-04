@@ -1,9 +1,20 @@
 import { Phone, MessageCircle, Shield } from "lucide-react";
+import paranaAerial from "@/assets/parana-aerial.jpg";
 
 const Hero = () => {
   return (
-    <section id="inicio" className="section-dark min-h-screen flex items-center pt-24">
-      <div className="container-main">
+    <section id="inicio" className="relative min-h-screen flex items-center pt-24 overflow-hidden">
+      {/* Imagen de fondo */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${paranaAerial})` }}
+      />
+      
+      {/* Overlay oscuro */}
+      <div className="absolute inset-0 bg-[hsl(220,14%,9%)]/85" />
+      
+      {/* Contenido */}
+      <div className="container-main relative z-10">
         <div className="max-w-4xl">
           {/* Badge de confianza */}
           <div className="flex flex-wrap gap-3 mb-8">
@@ -18,17 +29,17 @@ const Hero = () => {
           </div>
 
           {/* Título principal */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-medium leading-[1.1] mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-medium leading-[1.1] mb-6 text-white">
             Defensa penal y asesoramiento legal para empresas
           </h1>
 
           {/* Subtítulo */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4">
+          <p className="text-lg md:text-xl text-white/70 max-w-2xl mb-4">
             Atención 24 hs. Actuación en Entre Ríos, Santa Fe y Justicia Federal.
           </p>
 
           {/* Ubicación */}
-          <p className="text-sm text-muted-foreground mb-10">
+          <p className="text-sm text-white/50 mb-10">
             Paraná, Entre Ríos
           </p>
 
