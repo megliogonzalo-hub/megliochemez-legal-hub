@@ -1,5 +1,5 @@
 import { Phone, MessageCircle, Shield } from "lucide-react";
-import paranaAerial from "@/assets/parana-aerial.jpg";
+import teamDesk from "@/assets/team-desk.jpg";
 
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Imagen de fondo */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${paranaAerial})` }}
+        style={{ backgroundImage: `url(${teamDesk})` }}
       />
       
       {/* Overlay oscuro */}
