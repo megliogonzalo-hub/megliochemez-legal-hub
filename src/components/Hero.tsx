@@ -1,5 +1,5 @@
 import { Phone, MessageCircle, Shield } from "lucide-react";
-import teamDesk from "@/assets/team-desk.jpg";
+import officeMeeting from "@/assets/office-meeting.jpg";
 
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Imagen de fondo */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${teamDesk})` }}
+        style={{ backgroundImage: `url(${officeMeeting})` }}
       />
       
       {/* Overlay oscuro */}
