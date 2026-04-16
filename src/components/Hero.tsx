@@ -9,7 +9,7 @@ const Hero = () => {
         src={socios}
         alt="Meglio & Chemez Abogados"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ objectPosition: "center 20%" }}
+        style={{ objectPosition: "center 45%" }}
       />
 
       {/* Overlay oscuro */}
