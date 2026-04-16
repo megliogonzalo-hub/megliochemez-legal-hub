@@ -1,18 +1,20 @@
 import { Phone, MessageCircle, Shield } from "lucide-react";
-import officeMeeting from "@/assets/office-meeting.jpg";
+import socios from "@/assets/socios-hero.jpg";
 
 const Hero = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center pt-24 overflow-hidden">
       {/* Imagen de fondo */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${officeMeeting})` }}
+      <img
+        src={socios}
+        alt="Meglio & Chemez Abogados"
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ objectPosition: "center 20%" }}
       />
-      
+
       {/* Overlay oscuro */}
-      <div className="absolute inset-0 bg-[hsl(220,14%,9%)]/85" />
-      
+      <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220,14%,7%)]/92 via-[hsl(220,14%,9%)]/80 to-[hsl(220,14%,9%)]/50" />
+
       {/* Contenido */}
       <div className="container-main relative z-10">
         <div className="max-w-4xl">
@@ -30,17 +32,12 @@ const Hero = () => {
 
           {/* Título principal */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-medium leading-[1.1] mb-6 text-white">
-            Defensa penal y asesoramiento legal para empresas
+            Abogados Penalistas
           </h1>
-
-          {/* Subtítulo */}
-          <p className="text-lg md:text-xl text-white/70 max-w-2xl mb-4">
-            Atención 24 hs. Actuación en Entre Ríos, Santa Fe y Justicia Federal.
-          </p>
 
           {/* Ubicación */}
           <p className="text-sm text-white/50 mb-10">
-            Paraná, Entre Ríos
+            Paraná, Entre Ríos · Matrícula Federal y Provincial
           </p>
 
           {/* CTAs */}
