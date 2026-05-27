@@ -11,21 +11,21 @@ import FloatingCTA from "@/components/FloatingCTA";
 
 const Index = () => {
   return (
-      <div className="min-h-screen">
-            <Header />
-                  <main>
-                          <Hero />
-                                  <SectionEstudio />
-                                          <SectionPenal />
-                                                  <SectionDelitos />
-                                                          <SectionEmpresas />
-                                                                  <SectionEquipo />
-                                                                          <SectionContacto />
-                                                                                </main>
-                                                                                      <Footer />
-                                                                                            <FloatingCTA />
-                                                                                                </div>
-                                                                                                  );
-                                                                                                  };
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <Hero />
+        <SectionEstudio />
+        <SectionPenal />
+        <SectionDelitos />
+        <SectionEmpresas />
+        <SectionEquipo />
+        <SectionContacto />
+      </main>
+      <Footer />
+      <FloatingCTA />
+    </div>
+  );
+};
 
-                                                                                                  export default Index;
+export default Index;
