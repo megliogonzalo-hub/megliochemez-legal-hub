@@ -14,6 +14,7 @@ const socios = [
     foto: naimChemez,
     titulo: "Abogado graduado en la Pontificia Universidad Católica Argentina",
     especializacion: "Especializando en Derecho Penal UCA Sede Rosario",
+        especializacion2: "Diplomando en Derecho Penal Económico · Universidad Austral",
   },
 ];
 
@@ -54,6 +55,11 @@ const SectionEquipo = () => {
               <p className="text-primary text-sm font-medium">
                 {socio.especializacion}
               </p>
+                        {socio.especializacion2 && (
+                                    <p className="text-primary text-sm font-medium">
+                                                  {socio.especializacion2}
+                                                              </p>
+                                                                        )}
             </div>
           ))}
         </div>
