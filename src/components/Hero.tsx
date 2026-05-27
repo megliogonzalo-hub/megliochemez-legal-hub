@@ -1,5 +1,5 @@
 import { Phone, MessageCircle, Shield } from "lucide-react";
-import socios from "@/assets/socios-hero.jpg";
+import socios from "@/assets/image.png";
 
 const Hero = () => {
   return (
@@ -32,8 +32,13 @@ const Hero = () => {
 
           {/* Título principal */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-medium leading-[1.1] mb-6 text-white">
-            Abogados Penalistas
+            ABOGADOS PENALISTAS
           </h1>
+
+          {/* Subtítulo */}
+          <p className="text-lg md:text-xl text-white/80 mb-4 max-w-2xl">
+            Nos dedicamos a la defensa penal estratégica en delitos comunes y causas complejas en el fuero Provincial y Federal.
+          </p>
 
           {/* Ubicación */}
           <p className="text-sm text-white/50 mb-10">
@@ -42,14 +47,14 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
+            
               href="tel:+543435032674"
               className="btn-cta-primary"
             >
               <Phone className="w-5 h-5" />
               Llamá ahora
             </a>
-            <a
+            
               href="https://wa.me/543435032674"
               target="_blank"
               rel="noopener noreferrer"
