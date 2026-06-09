@@ -1,4 +1,5 @@
-import teamDesk from "@/assets/team-desk.jpg";
+import fontanetto from "@/assets/fontanetto.jpg";
+import palomeque from "@/assets/palomeque.jpg";
 import naimChemez from "@/assets/naim-chemez.jpg";
 import gonzaloMeglio from "@/assets/gonzalo-meglio.jpg";
 
@@ -64,20 +65,30 @@ const SectionEquipo = () => {
           ))}
         </div>
 
-        {/* Imagen del equipo */}
-        <div className="relative aspect-[16/9] lg:aspect-[21/9] overflow-hidden">
-          <img
-            src={teamDesk}
-            alt="Equipo de MEGLIO & CHEMEZ ABOGADOS"
-            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-          />
+        {/* Socios del estudio asociado */}
+        <div className="grid md:grid-cols-2 gap-8 mt-4">
+          <div className="overflow-hidden">
+            <img
+              src={fontanetto}
+              alt="Dr. Pedro Fontanetto"
+              className="w-full h-80 object-cover object-top"
+            />
+          </div>
+          <div className="overflow-hidden">
+            <img
+              src={palomeque}
+              alt="Dr. Germán Palomeque"
+              className="w-full h-80 object-cover object-top"
+            />
+          </div>
         </div>
 
         {/* Texto adicional */}
-        <div className="mt-12 max-w-2xl">
+        <div className="mt-8 max-w-3xl">
           <p className="text-muted-foreground leading-relaxed">
-            Actuamos en toda la provincia de Entre Ríos, Santa Fe y ante la Justicia Federal, 
-            con disponibilidad las 24 horas para situaciones urgentes.
+            Formamos parte del estudio de los Dres. Pedro Fontanetto y Germán Palomeque,
+            quienes con sus más de 12 años de experiencia brindan su conocimiento
+            en cada causa que atendemos.
           </p>
         </div>
       </div>
