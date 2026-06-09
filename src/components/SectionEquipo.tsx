@@ -69,7 +69,7 @@ const SectionEquipo = () => {
           <img
             src={fontanetto}
             alt="Estudio Fontanetto & Palomeque"
-            className="w-full h-96 object-cover object-center"
+            className="w-full h-96 object-cover object-[center_65%]"
           />
         </div>
 
