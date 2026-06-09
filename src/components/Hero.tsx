@@ -3,7 +3,7 @@ import socios from "@/assets/hero-socios.jpg";
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center pt-24 overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center pt-24 pb-16 md:pb-0 overflow-hidden">
       {/* Imagen de fondo */}
       <img
         src={socios}
@@ -13,7 +13,7 @@ const Hero = () => {
       />
 
       {/* Overlay oscuro */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220,14%,7%)]/92 via-[hsl(220,14%,9%)]/80 to-[hsl(220,14%,9%)]/50" />
+      <div className="absolute inset-0 bg-[hsl(220,14%,7%)]/70 md:bg-transparent md:[background:linear-gradient(to_right,hsl(220,14%,7%)/92%,hsl(220,14%,9%)/80%,hsl(220,14%,9%)/50%)]" />
 
       {/* Contenido */}
       <div className="container-main relative z-10">
@@ -31,12 +31,12 @@ const Hero = () => {
           </div>
 
           {/* Título principal */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-medium leading-[1.1] mb-6 text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-medium leading-[1.1] mb-5 text-white">
             ABOGADOS PENALISTAS
           </h1>
 
           {/* Subtítulo */}
-          <p className="text-lg md:text-xl text-white/80 mb-4 max-w-2xl">
+          <p className="text-base md:text-xl text-white/80 mb-4 max-w-2xl">
             Nos dedicamos a la defensa penal estratégica en delitos comunes y causas complejas en el fuero Provincial y Federal.
           </p>
 
@@ -46,7 +46,7 @@ const Hero = () => {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3">
             <a
               href="tel:+543435032674"
               className="btn-cta-primary"
