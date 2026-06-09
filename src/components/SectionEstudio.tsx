@@ -1,4 +1,4 @@
-import oficinaImg from "@/assets/imagen oficina.png";
+import oficinaImg from "@/assets/oficina.jpg";
 
 const SectionEstudio = () => {
   return (

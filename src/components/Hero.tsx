@@ -1,5 +1,5 @@
 import { Phone, MessageCircle, Shield } from "lucide-react";
-import socios from "@/assets/image.png";
+import socios from "@/assets/hero-socios.jpg";
 
 const Hero = () => {
   return (
@@ -47,14 +47,14 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            
+            <a
               href="tel:+543435032674"
               className="btn-cta-primary"
             >
               <Phone className="w-5 h-5" />
               Llamá ahora
             </a>
-            
+            <a
               href="https://wa.me/543435032674"
               target="_blank"
               rel="noopener noreferrer"
