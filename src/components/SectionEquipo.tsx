@@ -1,5 +1,4 @@
 import fontanetto from "@/assets/fontanetto.jpg";
-import palomeque from "@/assets/palomeque.jpg";
 import naimChemez from "@/assets/naim-chemez.jpg";
 import gonzaloMeglio from "@/assets/gonzalo-meglio.jpg";
 
@@ -65,22 +64,13 @@ const SectionEquipo = () => {
           ))}
         </div>
 
-        {/* Socios del estudio asociado */}
-        <div className="grid md:grid-cols-2 gap-8 mt-4">
-          <div className="overflow-hidden">
-            <img
-              src={fontanetto}
-              alt="Dr. Pedro Fontanetto"
-              className="w-full h-80 object-cover object-center"
-            />
-          </div>
-          <div className="overflow-hidden">
-            <img
-              src={palomeque}
-              alt="Dr. Germán Palomeque"
-              className="w-full h-80 object-cover object-bottom"
-            />
-          </div>
+        {/* Foto del estudio */}
+        <div className="overflow-hidden mt-4">
+          <img
+            src={fontanetto}
+            alt="Estudio Fontanetto & Palomeque"
+            className="w-full h-96 object-cover object-center"
+          />
         </div>
 
         {/* Texto adicional */}
