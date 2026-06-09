@@ -71,14 +71,14 @@ const SectionEquipo = () => {
             <img
               src={fontanetto}
               alt="Dr. Pedro Fontanetto"
-              className="w-full h-80 object-cover object-top"
+              className="w-full h-80 object-cover object-center"
             />
           </div>
           <div className="overflow-hidden">
             <img
               src={palomeque}
               alt="Dr. Germán Palomeque"
-              className="w-full h-80 object-cover object-top"
+              className="w-full h-80 object-cover object-bottom"
             />
           </div>
         </div>
