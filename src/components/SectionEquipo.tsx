@@ -65,11 +65,11 @@ const SectionEquipo = () => {
         </div>
 
         {/* Foto del estudio */}
-        <div className="overflow-hidden mt-4">
+        <div className="overflow-hidden mt-4 group">
           <img
             src={fontanetto}
             alt="Estudio Fontanetto & Palomeque"
-            className="w-full h-96 object-cover object-[80%_40%] md:object-[center_40%]"
+            className="w-full h-96 object-cover object-[80%_40%] md:object-[center_40%] grayscale group-hover:grayscale-0 transition-all duration-700"
           />
         </div>
 
