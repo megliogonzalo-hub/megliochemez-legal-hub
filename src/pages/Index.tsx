@@ -1,10 +1,8 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import FranjaInstitucional from "@/components/FranjaInstitucional";
 import SectionEstudio from "@/components/SectionEstudio";
-import SectionPenal from "@/components/SectionPenal";
-import SectionDelitos from "@/components/SectionDelitos";
-import SectionEmpresas from "@/components/SectionEmpresas";
-import SectionEquipo from "@/components/SectionEquipo";
+import SectionAreas from "@/components/SectionAreas";
 import SectionContacto from "@/components/SectionContacto";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
@@ -15,11 +13,9 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <FranjaInstitucional />
         <SectionEstudio />
-        <SectionPenal />
-        <SectionDelitos />
-        <SectionEmpresas />
-        <SectionEquipo />
+        <SectionAreas />
         <SectionContacto />
       </main>
       <Footer />

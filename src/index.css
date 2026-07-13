@@ -3,61 +3,63 @@
 @tailwind utilities;
 
 /* MEGLIO & CHEMEZ ABOGADOS - Design System
-   Estética: Minimalista, sobria, elegante
-   Tipografía: Serif elegante para títulos, sans-serif limpia para cuerpo
+   Estética: oscura, ejecutiva, premium.
+   Tipografía: Playfair Display en títulos, Inter en cuerpo.
+   Fondo dominante #111418. Único respiro claro #F2F2F0.
+   Petróleo #1B4B5A como acento escaso.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
     /* Colores principales - Paleta obligatoria */
     --background: 220 14% 9%; /* #111418 - Fondo oscuro */
     --background-light: 40 5% 95%; /* #F2F2F0 - Fondo claro */
-    --foreground: 0 0% 100%; /* #FFFFFF - Texto principal */
-    --foreground-dark: 216 13% 16%; /* #23272E - Texto secundario */
-    
+    --foreground: 40 5% 95%; /* #F2F2F0 - Texto claro */
+    --foreground-dark: 216 13% 16%; /* #23272E - Texto sobre claro */
+
     /* Grises */
     --muted: 210 10% 65%; /* #9AA4AE - Gris medio */
-    --muted-foreground: 210 10% 65%;
-    
-    /* Acento petróleo */
+    --muted-foreground: 210 10% 62%;
+
+    /* Acento petróleo (escaso) */
     --primary: 191 53% 23%; /* #1B4B5A - Acento petróleo */
-    --primary-foreground: 0 0% 100%;
-    
+    --primary-foreground: 40 5% 95%;
+
     /* Cards y superficies */
     --card: 220 14% 9%;
-    --card-foreground: 0 0% 100%;
+    --card-foreground: 40 5% 95%;
     --card-light: 40 5% 95%;
     --card-light-foreground: 216 13% 16%;
-    
+
     --popover: 220 14% 9%;
-    --popover-foreground: 0 0% 100%;
-    
+    --popover-foreground: 40 5% 95%;
+
     --secondary: 40 5% 95%;
     --secondary-foreground: 216 13% 16%;
-    
+
     --accent: 191 53% 23%;
-    --accent-foreground: 0 0% 100%;
-    
+    --accent-foreground: 40 5% 95%;
+
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-    
-    --border: 220 10% 20%;
+    --destructive-foreground: 40 5% 95%;
+
+    --border: 220 8% 22%;
     --border-light: 220 10% 85%;
-    --input: 220 10% 20%;
+    --input: 220 8% 22%;
     --ring: 191 53% 23%;
-    
+
     --radius: 0.25rem;
-    
+
     /* Sidebar - no usado pero requerido */
     --sidebar-background: 220 14% 9%;
-    --sidebar-foreground: 0 0% 100%;
+    --sidebar-foreground: 40 5% 95%;
     --sidebar-primary: 191 53% 23%;
-    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-primary-foreground: 40 5% 95%;
     --sidebar-accent: 220 14% 15%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 220 10% 20%;
+    --sidebar-accent-foreground: 40 5% 95%;
+    --sidebar-border: 220 8% 22%;
     --sidebar-ring: 191 53% 23%;
   }
 
@@ -67,7 +69,7 @@
     --card: 40 5% 95%;
     --card-foreground: 216 13% 16%;
     --border: 220 10% 85%;
-    --muted-foreground: 210 10% 45%;
+    --muted-foreground: 210 10% 40%;
   }
 }
 
@@ -75,110 +77,121 @@
   * {
     @apply border-border;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, sans-serif;
     font-weight: 400;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 500;
     letter-spacing: -0.01em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
   }
 }
 
 @layer components {
-  /* CTA Principal - Llamá ahora */
+  /* CTA Principal - Llamá ahora (único lugar con petróleo lleno) */
   .btn-cta-primary {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-4 
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4
            bg-primary text-primary-foreground font-medium text-base
            transition-all duration-300 ease-out
            hover:bg-primary/90 hover:scale-[1.02]
            focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background;
   }
-  
-  /* CTA Secundario - WhatsApp */
+
+  /* CTA Secundario - WhatsApp (contorno sobre oscuro) */
   .btn-cta-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-4 
-           bg-transparent border border-foreground/30 text-foreground font-medium text-base
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4
+           bg-transparent border border-foreground/25 text-foreground font-medium text-base
            transition-all duration-300 ease-out
            hover:bg-foreground/5 hover:border-foreground/50
            focus:outline-none focus:ring-2 focus:ring-foreground/30 focus:ring-offset-2 focus:ring-offset-background;
   }
-  
-  /* CTA para secciones claras */
+
+  /* CTA sobre sección clara */
   .btn-cta-dark {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-4 
-           bg-[hsl(216,13%,16%)] text-white font-medium text-base
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4
+           bg-[hsl(220,14%,9%)] text-[hsl(40,5%,95%)] font-medium text-base
            transition-all duration-300 ease-out
-           hover:bg-[hsl(216,13%,20%)] hover:scale-[1.02]
-           focus:outline-none focus:ring-2 focus:ring-[hsl(216,13%,16%)] focus:ring-offset-2;
+           hover:bg-[hsl(220,14%,14%)] hover:scale-[1.02]
+           focus:outline-none focus:ring-2 focus:ring-[hsl(220,14%,9%)] focus:ring-offset-2;
   }
-  
+
   /* Sección oscura */
   .section-dark {
-    @apply bg-[hsl(220,14%,9%)] text-white;
+    @apply bg-[hsl(220,14%,9%)] text-[hsl(40,5%,95%)];
   }
-  
-  /* Sección clara */
+
+  /* Sección clara (respiro único) */
   .section-light {
     @apply bg-[hsl(40,5%,95%)] text-[hsl(216,13%,16%)];
   }
-  
-  /* Cards para servicios */
-  .service-card {
-    @apply p-8 border border-border/20 bg-background/50 backdrop-blur-sm
-           transition-all duration-300 ease-out
-           hover:border-primary/30 hover:bg-background/70;
-  }
-  
-  .service-card-light {
-    @apply p-8 border border-[hsl(220,10%,85%)] bg-white/50
-           transition-all duration-300 ease-out
-           hover:border-primary/50 hover:bg-white/80;
-  }
-  
+
   /* Wordmark del estudio */
   .wordmark {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 600;
     letter-spacing: 0.02em;
   }
-  
-  /* Label pequeño encima de títulos */
-  .section-label {
-    @apply text-xs font-medium tracking-[0.2em] uppercase text-muted-foreground mb-4;
+
+  /* Numeración de secciones / ítems (acento petróleo) */
+  .section-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply text-primary tabular-nums;
   }
-  
-  /* Título de sección */
+
+  /* Eyebrow numerado que reemplaza el patrón "etiqueta mayúscula" */
+  .section-eyebrow {
+    @apply inline-flex items-center gap-3 text-xs font-medium tracking-[0.25em] uppercase text-muted-foreground mb-5;
+  }
+
+  /* Título de sección (escala unificada) */
   .section-title {
-    @apply text-4xl md:text-5xl font-medium leading-tight mb-6;
+    @apply text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.1];
   }
-  
+
   /* Link de navegación */
   .nav-link {
     @apply text-sm font-medium text-foreground/70 transition-colors duration-200
            hover:text-foreground relative;
   }
-  
+
   .nav-link::after {
     content: '';
     @apply absolute -bottom-1 left-0 w-0 h-px bg-primary transition-all duration-300;
   }
-  
+
   .nav-link:hover::after {
     @apply w-full;
   }
-  
+
+  /* Filete fino divisorio */
+  .hairline {
+    @apply border-t border-foreground/10;
+  }
+
   /* Badge de confianza */
   .trust-badge {
-    @apply inline-flex items-center gap-2 px-4 py-2 
+    @apply inline-flex items-center gap-2 px-4 py-2
            border border-foreground/20 text-sm text-foreground/80;
   }
 }
@@ -188,25 +201,30 @@
   .container-main {
     @apply w-full max-w-7xl mx-auto px-6 md:px-8 lg:px-12;
   }
-  
-  /* Espaciado de secciones */
+
+  /* Espaciado generoso de secciones */
   .section-spacing {
-    @apply py-14 md:py-28 lg:py-32;
+    @apply py-20 md:py-28 lg:py-36;
   }
-  
-  /* Fade in suave */
-  .fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
+
+  /* Aparición suave al hacer scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    will-change: opacity, transform;
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
+
+  .reveal-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
       opacity: 1;
-      transform: translateY(0);
+      transform: none;
+      transition: none;
     }
   }
 }

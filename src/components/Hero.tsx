@@ -3,7 +3,7 @@ import socios from "@/assets/hero-socios.jpg";
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center pt-24 pb-16 md:pb-0 overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center pt-20 pb-16 md:pb-0 overflow-hidden">
       {/* Imagen de fondo */}
       <img
         src={socios}
@@ -21,11 +21,11 @@ const Hero = () => {
           {/* Badge de confianza */}
           <div className="flex flex-wrap gap-3 mb-8">
             <div className="trust-badge">
-              <Shield className="w-4 h-4 text-primary" />
+              <Shield className="w-4 h-4 text-foreground/50" />
               Matrícula Federal
             </div>
             <div className="trust-badge">
-              <Shield className="w-4 h-4 text-primary" />
+              <Shield className="w-4 h-4 text-foreground/50" />
               Matrícula Provincial
             </div>
           </div>
