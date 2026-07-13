@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 405 720" width="405" height="720">
+  <rect width="405" height="720" fill="#111418"/>
+  <rect x="24" y="24" width="357" height="672" fill="none" stroke="#1B4B5A" stroke-width="1"/>
+  <text x="202.5" y="352" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="26" fill="#F2F2F0" letter-spacing="1">MEGLIO &amp; CHEMEZ</text>
+  <text x="202.5" y="384" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#9AA4AE" letter-spacing="4">ABOGADOS</text>
+  <circle cx="202.5" cy="470" r="30" fill="none" stroke="#F2F2F0" stroke-opacity="0.5" stroke-width="1"/>
+  <path d="M194 456 L216 470 L194 484 Z" fill="#F2F2F0" fill-opacity="0.7"/>
+</svg>
