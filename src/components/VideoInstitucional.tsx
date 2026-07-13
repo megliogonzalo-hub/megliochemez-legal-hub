@@ -39,6 +39,15 @@ const VideoInstitucional = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Al entrar en viewport, cargar la fuente y reproducir (silenciado).
+  useEffect(() => {
+    if (!inView) return;
+    const v = videoRef.current;
+    if (!v) return;
+    v.load();
+    void v.play().catch(() => {});
+  }, [inView]);
+
   const toggleMute = () => {
     const v = videoRef.current;
     if (!v) return;
@@ -76,14 +85,13 @@ const VideoInstitucional = () => {
           ref={videoRef}
           className="absolute inset-0 h-full w-full object-cover"
           poster="/estudio-poster.svg"
+          src="/estudio.mp4"
           autoPlay
           muted
           loop
           playsInline
-          preload={inView ? "auto" : "none"}
-        >
-          {inView && <source src="/estudio.mp4" type="video/mp4" />}
-        </video>
+          preload="metadata"
+        />
 
         {/* Controles sobrios */}
         <div className="absolute bottom-3 right-3 flex gap-2">
