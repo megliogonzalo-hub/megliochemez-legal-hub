@@ -44,25 +44,53 @@ const SectionContacto = () => {
             {/* Teléfono */}
             <div className="text-center">
               <Phone className="w-5 h-5 text-[hsl(216,13%,16%)] mx-auto mb-3" />
-              <p className="text-sm text-gray-medium mb-1">Teléfono</p>
-              <a
-                href="tel:+543435032674"
-                className="text-light-foreground transition-opacity hover:opacity-70"
-              >
-                +54 343 503-2674
-              </a>
+              <p className="text-sm text-gray-medium mb-3">Teléfono</p>
+              <div className="space-y-3">
+                <div>
+                  <p className="text-xs text-gray-medium mb-0.5">Dr. Gonzalo Meglio</p>
+                  <a
+                    href="tel:+543435032674"
+                    className="text-light-foreground transition-opacity hover:opacity-70"
+                  >
+                    +54 343 503-2674
+                  </a>
+                </div>
+                <div>
+                  <p className="text-xs text-gray-medium mb-0.5">Dr. Naim Chemez</p>
+                  <a
+                    href="tel:+543434506420"
+                    className="text-light-foreground transition-opacity hover:opacity-70"
+                  >
+                    +54 343 450-6420
+                  </a>
+                </div>
+              </div>
             </div>
 
             {/* Email */}
             <div className="text-center">
               <Mail className="w-5 h-5 text-[hsl(216,13%,16%)] mx-auto mb-3" />
-              <p className="text-sm text-gray-medium mb-1">Email</p>
-              <a
-                href="mailto:megliogonzalo@gmail.com"
-                className="text-light-foreground transition-opacity hover:opacity-70"
-              >
-                megliogonzalo@gmail.com
-              </a>
+              <p className="text-sm text-gray-medium mb-3">Email</p>
+              <div className="space-y-3">
+                <div>
+                  <p className="text-xs text-gray-medium mb-0.5">Dr. Gonzalo Meglio</p>
+                  <a
+                    href="mailto:megliogonzalo@gmail.com"
+                    className="text-sm text-light-foreground transition-opacity hover:opacity-70 break-words"
+                  >
+                    megliogonzalo@gmail.com
+                  </a>
+                </div>
+                <div>
+                  <p className="text-xs text-gray-medium mb-0.5">Dr. Naim Chemez</p>
+                  <a
+                    href="mailto:naimchemez17@gmail.com"
+                    className="text-sm text-light-foreground transition-opacity hover:opacity-70 break-words"
+                  >
+                    naimchemez17@gmail.com
+                  </a>
+                </div>
+              </div>
             </div>
 
             {/* Dirección */}
