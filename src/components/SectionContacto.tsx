@@ -8,7 +8,7 @@ const SectionContacto = () => {
         <Reveal className="max-w-3xl mx-auto text-center">
           {/* Header */}
           <p className="inline-flex items-center gap-3 text-xs font-medium tracking-[0.25em] uppercase text-[hsl(216,13%,16%)]/55 mb-5">
-            <span className="section-number">03</span> Contacto
+            <span className="section-number">04</span> Contacto
           </p>
           <h2 className="section-title text-light-foreground mb-4">
             Hablemos de tu caso
@@ -98,12 +98,12 @@ const SectionContacto = () => {
               <MapPin className="w-5 h-5 text-[hsl(216,13%,16%)] mx-auto mb-3" />
               <p className="text-sm text-gray-medium mb-1">Dirección</p>
               <a
-                href="https://maps.app.goo.gl/GAXcwNpE2uwcEsKm9?g_st=ic"
+                href="https://www.google.com/maps/search/?api=1&query=C%C3%B3rdoba+538%2C+Paran%C3%A1%2C+Entre+R%C3%ADos"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-light-foreground transition-opacity hover:opacity-70"
               >
-                Victoria 3, Paraná
+                Córdoba 538, Paraná
               </a>
             </div>
           </div>

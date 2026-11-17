@@ -23,7 +23,7 @@ const Privacidad = () => {
               Responsable del tratamiento
             </h2>
             <p>
-              MEGLIO & CHEMEZ ABOGADOS, con domicilio en Victoria 3, Paraná, Entre Ríos, 
+              MEGLIO & CHEMEZ ABOGADOS, con domicilio en Córdoba 538, Paraná, Entre Ríos, 
               es responsable del tratamiento de los datos personales recopilados a 
               través de este sitio web.
             </p>

@@ -85,7 +85,7 @@ const SectionAreas = () => {
       <div className="container-main">
         <Reveal className="mb-12 md:mb-16 max-w-2xl">
           <p className="section-eyebrow">
-            <span className="section-number">02</span> Áreas de práctica
+            <span className="section-number">03</span> Áreas de práctica
           </p>
           <h2 className="section-title">Áreas de práctica y delitos</h2>
         </Reveal>

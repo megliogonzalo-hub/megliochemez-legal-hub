@@ -24,7 +24,7 @@ const AvisoLegal = () => {
             </h2>
             <p>
               Este sitio web es propiedad de MEGLIO & CHEMEZ ABOGADOS, con domicilio 
-              profesional en Victoria 3, Paraná, Entre Ríos, República Argentina.
+              profesional en Córdoba 538, Paraná, Entre Ríos, República Argentina.
             </p>
           </section>
 

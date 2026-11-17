@@ -3,20 +3,10 @@ import socios from "@/assets/hero-socios.jpg";
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center pt-20 pb-16 md:pb-0 overflow-hidden">
-      {/* Imagen de fondo */}
-      <img
-        src={socios}
-        alt="Meglio & Chemez Abogados"
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ objectPosition: "center 45%" }}
-      />
-
-      {/* Overlay oscuro */}
-      <div className="absolute inset-0 bg-[hsl(220,14%,7%)]/70 md:bg-transparent md:[background:linear-gradient(to_right,hsl(220,14%,7%)/92%,hsl(220,14%,9%)/80%,hsl(220,14%,9%)/50%)]" />
-
+    <section id="inicio" className="relative bg-[hsl(220,14%,7%)] pt-28 md:pt-36 lg:pt-32 lg:pb-20 lg:min-h-screen lg:flex lg:items-center overflow-hidden">
+      <div className="container-main lg:grid lg:grid-cols-[5fr_7fr] lg:gap-12 xl:gap-16 lg:items-center">
       {/* Contenido */}
-      <div className="container-main relative z-10">
+      <div className="relative z-10">
         <div className="max-w-4xl">
           {/* Badge de confianza */}
           <div className="flex flex-wrap gap-3 mb-8">
@@ -31,7 +21,7 @@ const Hero = () => {
           </div>
 
           {/* Título principal */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-medium leading-[1.1] mb-5 text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-medium leading-[1.1] mb-5 text-white">
             ABOGADOS PENALISTAS
           </h1>
 
@@ -65,6 +55,17 @@ const Hero = () => {
             </a>
           </div>
         </div>
+      </div>
+
+      {/* Foto del equipo */}
+      <div className="relative mt-12 -mx-6 sm:mx-0 lg:mt-0">
+        <img
+          src={socios}
+          alt="Equipo de Fontanetto & Palomeque y Asociados en el estudio"
+          fetchPriority="high"
+          className="w-full h-auto"
+        />
+      </div>
       </div>
     </section>
   );
