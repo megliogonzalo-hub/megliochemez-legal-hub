@@ -45,7 +45,7 @@ const Hero = () => {
               Llamá ahora
             </a>
             <a
-              href="https://wa.me/543435032674"
+              href="https://wa.me/5493435032674"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-cta-secondary"
