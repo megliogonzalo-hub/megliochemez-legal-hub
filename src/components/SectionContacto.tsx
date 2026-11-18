@@ -8,7 +8,7 @@ const SectionContacto = () => {
         <Reveal className="max-w-3xl mx-auto text-center">
           {/* Header */}
           <p className="inline-flex items-center gap-3 text-xs font-medium tracking-[0.25em] uppercase text-[hsl(216,13%,16%)]/55 mb-5">
-            <span className="section-number">04</span> Contacto
+            Contacto
           </p>
           <h2 className="section-title text-light-foreground mb-4">
             Hablemos de tu caso

@@ -14,7 +14,7 @@ const socios = [
   },
   {
     nombre: "Naim Chemez",
-    cargo: "Asociado",
+    cargo: "Socio",
     foto: naimChemez,
     bio: [
       "Abogado por la Pontificia Universidad Católica Argentina (UCA). Concluyó el cursado de la Especialización en Derecho Penal en la misma casa de estudios y actualmente se encuentra en la etapa de elaboración de su tesis. Diplomado en Derecho Penal Económico por la Universidad Austral.",
